@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+
+/* Assets: Farben: rgb(233, 233, 224), #333 */
+
+/* display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33vh 33vh 33vh ; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', sans-serif;
+    background-color: rgb(233, 233, 224);
+}
+
+header{
+    text-align: center;
+}
+
+ul {
+    display:flex;
+    justify-content: space-around;
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+    
+}
+ul li  {
+    list-style: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+header h1{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#firstgrid{
+    display:grid;
+    grid-template-columns: repeat(6,15%);
+    grid-template-rows: 5vh 10vh 25vh 25vh   ;
+    
+    column-gap: 5px ;
+    row-gap: 20px;
+    margin-bottom: 5%;
+    font-size: 13px;
+}
+
+#firstgrid div{
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+#firstgrid img:nth-of-type(1){
+    width: 400px;
+}
+div:last-of-type img{
+    width:50px;
+}
+
+#firstgrid div:nth-of-type(1){
+    grid-column:1/4;
+        grid-row:1/2;
+        width: 500px;
+        text-align: center;
+        font-size: 15px;
+        
+
+}
+#firstgrid div:nth-of-type(2){
+    grid-column:1/3;
+        grid-row:2/3;
+}
+#firstgrid div:nth-of-type(3){
+    grid-column:2/4;
+        grid-row:2/3;
+}
+#firstgrid div:nth-of-type(4){
+    grid-column:1/4;
+        grid-row:3/4;
+}
+#firstgrid div:nth-of-type(5){
+    grid-column:2/3;
+    grid-row:3/4;
+}
+#firstgrid div:nth-of-type(6){
+    grid-column:1/3;
+    grid-row:4/-1;
+}
+#firstgrid div:nth-of-type(7){
+    grid-column:2/3;
+    grid-row:4/-1;
+    column-gap: 0 ;
+}
+#firstgrid div:nth-of-type(8){
+    grid-column:3/4;
+    grid-row:2/-1;
+    column-gap: 0 ;
+
+}
+#firstgrid div:nth-of-type(9){
+    grid-column:5/-1;
+    grid-row:1/2;
+}
+#firstgrid div:nth-of-type(10){
+    grid-column:5/-1;
+    grid-row:2/3;
+}
+#firstgrid div:nth-of-type(11){
+    grid-column:5/-1;
+    grid-row:3/4;
+
+}
+
+.lastimg {
+    width: 20px;
+}
+
+
+
+
